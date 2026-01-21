@@ -1,0 +1,29 @@
+*, *:before, *:after{
+box-sizing: border-box;
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-rows: 1fr 10fr;
+grid-template-areas: "header-logo header-nav cart" ". header-text ."
+}
+body{
+    font-family:sans-serif
+}
+.header {
+  display: grid;
+}
+
+.header-logo {
+  grid-area: header-logo;
+  display: inline-block;
+}
+
+.header-nav {
+  grid-area: header-nav;
+}
+
+.cart {
+  grid-area: cart;
+}
+
+.header-text {
+  grid-area: header-text;
+}
